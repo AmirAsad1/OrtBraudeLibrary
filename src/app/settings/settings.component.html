@@ -1,0 +1,9 @@
+<div style="display: flex;margin: 2rem;">
+    <p style="flex-grow:1;text-align: center;width:500px">Turn dark mode on</p>
+    <p style="flex-grow:1;text-align: center;width:500px"><input type="checkbox" (change)="toggleLightMode($event)"/></p>
+    </div>
+    <div style="display: flex;margin: 2rem;">
+    <p style="flex-grow:1;text-align: center;width:500px">Add Admin</p>
+    <p style="flex-grow:1;text-align: center;width:500px"><input type="text" style="width:300px;border-radius:10px" (change) = "enterName($event)" /></p>
+    </div>
+    <p id="para" style="margin-left: 10rem;" *ngFor="let admin of admins.admins;let i =index">Admin No {{i+1}}: {{admin}}</p>

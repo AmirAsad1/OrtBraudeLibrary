@@ -1,0 +1,44 @@
+form{
+    margin:50px 0 0 60px;
+}
+
+input{
+    height: 25px;
+    border-radius: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.inputTags{
+    border-radius: 10px;
+    width: 300px;
+}
+
+p{
+    font-size: 20px;
+}
+
+#btn{
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 30px;
+    font-size: 15px;
+    float: right;
+    margin: 5rem;
+}
+
+#file{
+    display:none;
+}
+#btn1{
+    width: 150px;
+    background-color: black;
+    height: 30px;
+}
+
+label{
+    color: white;
+    height: 30px;
+    font-size: 15px;
+}

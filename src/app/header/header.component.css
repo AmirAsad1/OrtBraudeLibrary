@@ -1,0 +1,27 @@
+ul{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background-color: rgb(215, 211, 211);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+.buttons{
+    color: white;
+    background-color: black;
+    width: 200px;
+    height: 25px;
+
+}
+img{
+    width: 200px;
+}
+li{
+    margin-top: 2px;
+    
+}
+#Empty{
+    height: 573px;
+}

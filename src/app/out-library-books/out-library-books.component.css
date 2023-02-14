@@ -1,0 +1,43 @@
+#div1{
+    display: flex;
+    margin: 2rem;
+}
+.clly{
+    margin: 1rem;
+}
+input{
+    border-radius: 10px;
+    width: 300px;
+    height: 20px;
+    text-align: center;
+}
+
+button{
+    background-color: black;
+    color: white;
+    width: 100px;
+    height: 25px;
+}
+
+#div2{
+   
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    width: 300px;
+    height: 650px;
+    display: inline-block;
+    text-align: center;
+    vertical-align:  top;
+}
+
+img{
+    margin-top: 1rem;
+    width: 150px;
+    height: 200px;
+}
+
+p{
+    text-align: center;
+    font-size: 20px;
+}

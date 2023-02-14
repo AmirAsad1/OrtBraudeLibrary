@@ -22,10 +22,5 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('OrtBraudeLibrary');
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('OrtBraudeLibrary app is running!');
-  });
+ 
 });

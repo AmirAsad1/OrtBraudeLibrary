@@ -1,0 +1,22 @@
+<form class="form-container" (ngSubmit) = "onSubmit(formDetails)" #formDetails="ngForm">
+    <p>Enter Book name</p>
+    <input type="text" placeholder="Book Name " ngModel name="bookname" required #bookname="ngModel"/>
+    <p class="bookname-validation-msg" *ngIf="bookname.invalid&& bookname.touched" [ngStyle] = "{'color':'red'}">Book Name Cannot be empty</p>
+    <p>Enter Book Author</p>
+    <input type="text" placeholder="Author Name " ngModel name="authorname" required #authorname="ngModel"/>
+    <p class="authorname-validation-msg" *ngIf="authorname.invalid&& authorname.touched" [ngStyle] = "{'color':'red'}">Author Name Cannot be empty</p>
+    <p>Enter Book Tags</p>
+    <input class="inputTags" type="text" placeholder="Book Tags: History, Math, CS .. " ngModel name="tags" required #tags="ngModel"/>
+    <p class="bookname-validation-msg" *ngIf="tags.invalid&& tags.touched" [ngStyle] = "{'color':'red'}">Tags Cannot be empty</p>
+    <p>Enter Book Quantity</p>
+    <input type="number" placeholder="Book Quantity " ngModel name="quantity" required #quantity="ngModel"/>
+    <p class="bookname-validation-msg" *ngIf="quantity.invalid&& quantity.touched" [ngStyle] = "{'color':'red'}">Quantity Cannot be empty</p>
+    <p>Upload Image</p>
+    <input type="file" id="file" accept="image/*" (change)="onselect($event)" ngModel name="image" required #image="ngModel" >
+    <button type="button" id="btn1"><label for="file">Upload Image</label></button>
+    
+  
+    
+    <button  id="btn" [disabled] = "formDetails.invalid " type="submit">Add Book</button>
+  
+  </form>

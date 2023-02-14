@@ -1,0 +1,7 @@
+<div *ngFor="let book of bookService.books">
+    <img src="{{book.image}}">
+    <p><b>Name</b> : {{book.name}}</p>
+    <p><b>Quantity</b> : {{book.quantity}}</p>
+    <p><b>Tags</b> : {{book.tags}}</p>
+    <button (click)="onclick()">Reserve Book</button>
+</div>

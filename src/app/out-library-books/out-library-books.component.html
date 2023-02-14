@@ -1,0 +1,16 @@
+<div id="div1">
+    <input class="clly" type="text" placeholder="Search By Book Name" [(ngModel)]="bookname" >
+    <button class="clly" type="button" (click)="search()">Search Book</button>
+    </div>
+    
+    <div id="div2" *ngFor="let book of outbooks.books">
+        <img src="{{book.imageLink}}">
+        <p><b>Title</b> : {{book.title}}</p>
+        <p><b>Subtitle</b> : {{book.subtitle}}</p>
+        <p><b>Average Rate</b> : {{book.averageRating}}</p>
+        <p><b>Publisher</b> : {{book.publisher}}</p>
+        <p><b>Language</b> : {{book.language}}</p>
+        <p><b>Pages Number</b> : {{book.pageCount}}</p>
+        <p><b>Rating Count</b> : {{book.ratingsCount}}</p>
+        <button (click)="goToLink(book.previewLink)">Preview Book</button>
+    </div>

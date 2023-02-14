@@ -1,0 +1,25 @@
+div{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 300px;
+    margin: 5px;
+    height: 400px;
+    display: inline-block;
+    text-align: center;
+}
+img{
+    margin-top: 1rem;
+    width: 200px;
+    height: 200px;
+}
+
+p{
+    text-align: center;
+    font-size: 20px;
+}
+button{
+    color: white;
+    background-color: black;
+    width: 200px;
+    height: 25px;
+}
